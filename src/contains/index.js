@@ -3,6 +3,9 @@
 
 
 import backgroundImage from '../assets/background.jpg'
-
-
-export {backgroundImage}
+import logo from '../assets/logo.png';
+import cloud from '../assets/cloud.png'
+import explore from '../assets/explore.png'
+import location from '../assets/location.png'
+import settings from '../assets/settings.png'
+export {backgroundImage,logo,explore,location,settings,cloud}

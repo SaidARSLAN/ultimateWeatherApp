@@ -1,11 +1,13 @@
 import './generalStyles/style.css'
-import { backgroundImage } from './contains'
+import ComponentOne from './components/componentOne/ComponentOne'
+import ComponentZero from './components/componentZero/ComponentZero'
 
 function App() {
 
   return (
     <main>
-      <img src={backgroundImage} />
+      <ComponentZero />
+      <ComponentOne />
     </main>
   )
 }
