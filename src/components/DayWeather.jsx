@@ -30,7 +30,7 @@ const DayWeather = () => {
         <div className='days-all'>
             {forecastInfo.forecast && forecastInfo.forecast.forecastday.slice(step,step+7).map((day,idx) => {
                 return (
-                    <div key={idx} className='day-detail'>
+                    <div key={day} className='day-detail'>
                         <img src ={day.day.condition.icon} />
                         <p>{day.day.maxtemp_c}&deg;</p>
                     </div>

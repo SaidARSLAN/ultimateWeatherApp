@@ -189,6 +189,11 @@ nav .navTypography:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 1200px) {
+  .middle .photoSection .cityPhotos img {
+    width: 15%;
+  }
+}
 .middle .day-weather {
   height: 50%;
 }
@@ -198,6 +203,11 @@ nav .navTypography:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-header {
+    padding: 0.2rem;
+  }
 }
 .middle .day-weather .days-header p {
   width: 60px;
@@ -211,17 +221,32 @@ nav .navTypography:hover {
   font-weight: 400;
   line-height: normal;
 }
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-header p {
+    height: 0;
+  }
+}
 .middle .day-weather .days-body {
   padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-body {
+    padding-top: 0.7rem;
+  }
+}
 .middle .day-weather .days-body .days-all {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-body .days-all {
+    justify-content: space-between;
+  }
 }
 .middle .day-weather .days-body .days-all .day-detail {
   margin: 0 5px;
@@ -231,8 +256,18 @@ nav .navTypography:hover {
   justify-content: center;
   gap: 1rem;
 }
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-body .days-all .day-detail {
+    gap: 0;
+  }
+}
 .middle .day-weather .days-body .days-all .day-detail img {
   width: 75px;
+}
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-body .days-all .day-detail img {
+    width: 25px;
+  }
 }
 .middle .day-weather .days-body .days-all .day-detail p {
   width: 60px;
@@ -245,6 +280,12 @@ nav .navTypography:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media only screen and (max-width: 1200px) {
+  .middle .day-weather .days-body .days-all .day-detail {
+    width: 15px;
+    height: 0;
+  }
 }
 .middle .day-weather .days-body .actions {
   cursor: pointer;
