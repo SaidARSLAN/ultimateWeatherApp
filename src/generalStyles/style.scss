@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat&display=swap');
 @import 'reset.scss';
 @import 'header.scss';
-
+@import 'nav.scss';
+@import './middle';
 
 $properties: (
   background-color: #FFFFFF,
@@ -17,7 +18,7 @@ main {
         display: grid;
         grid-template-columns: 914px 593px;
         height: 50%;
-        @media only screen and (max-width:1000px) {
+        @media only screen and (max-width:1200px) {
             grid-template-columns: 1fr;
         }
     }
@@ -25,7 +26,7 @@ main {
         display: grid;
         grid-template-columns: 188px 726px 593px;
         height: 100%;
-        @media only screen and (max-width:1000px) {
+        @media only screen and (max-width:1200px) {
             grid-template-columns: 1fr;
         }
     }

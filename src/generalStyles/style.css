@@ -35,7 +35,7 @@ header .info-section {
   flex-direction: column;
   justify-content: space-around;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   header .info-section {
     justify-content: center;
     row-gap: 1rem;
@@ -47,13 +47,13 @@ header .info-section .description {
   flex-direction: column;
   row-gap: 1rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   header .info-section .description {
     font-size: 14px;
     row-gap: 4px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   header .info-section .celcius {
     font-size: 12px;
   }
@@ -61,7 +61,7 @@ header .info-section .description {
 header .info-section .centered {
   margin-left: 12px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   header .info-section .centered {
     margin-left: 0;
   }
@@ -75,7 +75,7 @@ header .image-section {
   align-items: center;
   flex-shrink: 0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   header .image-section {
     width: 150px;
   }
@@ -91,6 +91,11 @@ header .date-section {
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
+  header .date-section {
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 1200px) {
   header .date-section h2 {
     font-size: 20px;
   }
@@ -102,6 +107,107 @@ header .date-section .line {
   background-color: #ffffff;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem 5rem 0;
+  gap: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+  nav {
+    flex-direction: row;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
+    justify-content: space-between;
+  }
+}
+nav .navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+  nav .navItem img {
+    width: 75%;
+  }
+}
+nav .navTypography {
+  color: #C4C3C1;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+nav .navTypography:hover {
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 1200px) {
+  nav .navTypography {
+    color: white;
+  }
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+.middle .cityPhotos {
+  height: 50%;
+}
+.middle .day-weather {
+  padding: 3rem 0 0 0;
+  height: 50%;
+}
+.middle .day-weather .days-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.middle .day-weather .days-header p {
+  width: 60px;
+  height: 11px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12.068px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.middle .day-weather .days-body {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.middle .day-weather .days-body .day-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle .day-weather .days-body .day-detail p {
+  width: 60px;
+  height: 11px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -111,7 +217,7 @@ main .first-container {
   grid-template-columns: 914px 593px;
   height: 50%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   main .first-container {
     grid-template-columns: 1fr;
   }
@@ -121,7 +227,7 @@ main .second-container {
   grid-template-columns: 188px 726px 593px;
   height: 100%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   main .second-container {
     grid-template-columns: 1fr;
   }
