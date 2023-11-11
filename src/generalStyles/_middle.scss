@@ -5,12 +5,22 @@
 
     .cityPhotos{
         height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        img {
+            width: 22%;
+            height: 50%;
+            border-radius: 6.811px;
+        }
     }
 
     .day-weather {
-        padding: 3rem 0 0 0;
         height: 50%;
         .days-header {
+            padding: 3rem 0 0 0;
+            margin: 0 1rem;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -27,28 +37,43 @@
                 line-height: normal;
             }
         }
-        .days-body{
-            padding-top: 3rem;
+        .days-body {
+            padding-top: 2rem;
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            .day-detail {
+            justify-content: space-between;
+            .days-all{
+                width: 100%;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                p {
-                    width: 60px;
-                    height: 11px;
-                    flex-shrink: 0;
-                    color: #FFF;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
+                justify-content: space-between;
+                .day-detail {
+                    margin: 0 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    img {
+                        width: 75px;
+                    }
+                    p {
+                        width: 60px;
+                        height: 11px;
+                        flex-shrink: 0;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    
                 }
+            }
+            .actions{
+                cursor: pointer;
             }
         }
 

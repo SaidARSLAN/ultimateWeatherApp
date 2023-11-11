@@ -161,12 +161,22 @@ nav .navTypography:hover {
 }
 .middle .cityPhotos {
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.middle .cityPhotos img {
+  width: 22%;
+  height: 50%;
+  border-radius: 6.811px;
 }
 .middle .day-weather {
-  padding: 3rem 0 0 0;
   height: 50%;
 }
 .middle .day-weather .days-header {
+  padding: 3rem 0 0 0;
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -184,18 +194,29 @@ nav .navTypography:hover {
   line-height: normal;
 }
 .middle .day-weather .days-body {
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.middle .day-weather .days-body .day-detail {
+.middle .day-weather .days-body .days-all {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.middle .day-weather .days-body .days-all .day-detail {
+  margin: 0 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
-.middle .day-weather .days-body .day-detail p {
+.middle .day-weather .days-body .days-all .day-detail img {
+  width: 75px;
+}
+.middle .day-weather .days-body .days-all .day-detail p {
   width: 60px;
   height: 11px;
   flex-shrink: 0;
@@ -206,6 +227,9 @@ nav .navTypography:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.middle .day-weather .days-body .actions {
+  cursor: pointer;
 }
 
 main {
