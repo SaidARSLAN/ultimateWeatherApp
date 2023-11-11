@@ -3,19 +3,36 @@
     display: flex;
     flex-direction: column;
 
-    .cityPhotos{
-        height: 50%;
+    .photoSection {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-        img {
-            width: 22%;
-            height: 50%;
-            border-radius: 6.811px;
+        height: 50%;
+        h2 {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .cityPhotos{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            img {
+                width: 22%;
+                height: 75%;
+                border-radius: 6.811px;
+                object-fit: cover;
+            }
         }
     }
-
+        
     .day-weather {
         height: 50%;
         .days-header {

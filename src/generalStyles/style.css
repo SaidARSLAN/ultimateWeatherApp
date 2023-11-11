@@ -159,17 +159,35 @@ nav .navTypography:hover {
   display: flex;
   flex-direction: column;
 }
-.middle .cityPhotos {
+.middle .photoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 50%;
+}
+.middle .photoSection h2 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.middle .photoSection .cityPhotos {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.middle .cityPhotos img {
+.middle .photoSection .cityPhotos img {
   width: 22%;
-  height: 50%;
+  height: 75%;
   border-radius: 6.811px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .middle .day-weather {
   height: 50%;

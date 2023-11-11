@@ -14,7 +14,7 @@ export const Provider = ({children}) => {
 
     
     const getImages = async () => {
-        const response = await fetch("https://api.unsplash.com/search/photos?query=madrid", {
+        const response = await fetch("https://api.unsplash.com/search/photos?query=countryside", {
             headers: {
                 Authorization: "Client-ID g8Xeq0CXcvobo22LXXeBMfq4G6bH1TX8k2aI4KjUa44"
             }
@@ -28,7 +28,7 @@ export const Provider = ({children}) => {
 
     const getWeatherDatas = async () => {
         try {
-            const response = await fetch("http://api.weatherapi.com/v1/current.json?key=17fda583f98446858f1200014231011&q=Madrid");
+            const response = await fetch("http://api.weatherapi.com/v1/current.json?key=17fda583f98446858f1200014231011&q=ankara");
             const data = await response.json();
             return data;
         }
