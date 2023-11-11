@@ -1,13 +1,30 @@
+import Header from './components/Header'
 import './generalStyles/style.css'
-import ComponentOne from './components/componentOne/ComponentOne'
-import ComponentZero from './components/componentZero/ComponentZero'
+
 
 function App() {
 
   return (
     <main>
-      <ComponentZero />
-      <ComponentOne />
+      <div className='first-container'>
+      <div className=''>
+          <Header />
+      </div>
+      <div className='item'>
+        <p>chart</p>
+      </div>
+      </div>
+      <div className='second-container'>
+      <div className='item'>
+        <p>nav</p>
+      </div>
+      <div className='item'>
+        <p>middle</p>
+      </div>
+      <div className='item'>
+        <p>detail</p>
+      </div>
+      </div>
     </main>
   )
 }

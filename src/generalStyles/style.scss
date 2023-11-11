@@ -1,1 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat&display=swap');
 @import 'reset.scss';
+@import 'header.scss';
+
+
+$properties: (
+  background-color: #FFFFFF,
+  background: #C4C3C166,
+  margin: 1rem,
+  border-radius: 27.244px
+);
+
+main {
+    display: flex;
+    flex-direction: column;
+    .first-container {
+        display: grid;
+        grid-template-columns: 914px 593px;
+        height: 50%;
+        @media only screen and (max-width:1000px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .second-container {
+        display: grid;
+        grid-template-columns: 188px 726px 593px;
+        height: 100%;
+        @media only screen and (max-width:1000px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .item {
+        @each $property, $value in $properties {
+            #{$property} : $value;
+        }
+    }
+    .typography {
+        color: #FFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

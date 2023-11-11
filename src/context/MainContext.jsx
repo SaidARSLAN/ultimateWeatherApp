@@ -14,7 +14,7 @@ export const Provider = ({children}) => {
 
     const getWeatherDatas = async () => {
         try {
-            const response = await fetch("http://api.weatherapi.com/v1/current.json?key=17fda583f98446858f1200014231011&q=Amsterdam");
+            const response = await fetch("http://api.weatherapi.com/v1/current.json?key=17fda583f98446858f1200014231011&q=Madrid");
             const data = await response.json();
             return data;
         }
