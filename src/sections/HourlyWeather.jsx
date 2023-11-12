@@ -12,7 +12,7 @@ const Chart = () => {
       <div className='chart-title'>
       <img src={clock} width={25}/>
       <h2>
-        Hourly Forecast
+        24-hour Forecast
         </h2>
       </div>
       <div className='chart-temps'>
