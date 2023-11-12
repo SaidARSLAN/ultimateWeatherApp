@@ -291,6 +291,7 @@ nav .navTypography:hover {
 }
 .middle .day-weather .days-body .actions {
   cursor: pointer;
+  color: #FFF;
 }
 
 .air-condition {
