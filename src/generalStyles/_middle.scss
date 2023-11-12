@@ -1,12 +1,41 @@
+$vertical-center: (
+    display:flex,
+    flex-direction : column,
+    justify-content: center,
+);
+$horizontal-center: (
+    display:flex,
+    align-items:center,
+    justify-content: center,
+);
+$between-center: (
+    display:flex,
+    align-items:center,
+    justify-content: space-between,
+);
+$paragraph : (
+    width: 60px,
+    height: 11px,
+    flex-shrink: 0,
+    color: #FFF,
+    text-align: center,
+    font-family: Inter,
+    font-style: normal,
+    font-weight: 400,
+    line-height: normal,
+);
+
 .middle {
-
-    display: flex;
-    flex-direction: column;
-
+    @each $property, $value in $vertical-center {
+        #{$property} : $value;
+    }
     .photoSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @each $property, $value in $vertical-center {
+            #{$property} : $value;
+        }
+        @media only screen and (max-width:1200px) {
+            align-items: center;
+        }
         height: 50%;
         h2 {
             padding-top: 1rem;
@@ -20,10 +49,10 @@
 
         }
         .cityPhotos{
+            @each $property, $value in $horizontal-center {
+                #{$property} : $value;
+            }
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             gap: 1rem;
 
             img {
@@ -50,16 +79,11 @@
                padding: 0.2rem;
             }
             p {
-                width: 60px;
-                height: 11px;
-                flex-shrink: 0;
-                color: #FFF;
-                text-align: center;
-                font-family: Inter;
+                @each $property, $value in $paragraph {
+                    #{$property} : $value;
+                }
                 font-size: 12.068px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+               
                 @media only screen and (max-width:1200px) {
                     height: 0;
                 }
@@ -68,26 +92,23 @@
         }
         .days-body {
             padding-top: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @each $property, $value in $between-center {
+                #{$property} : $value;
+            }
             @media only screen and (max-width:1200px) {
                 padding-top: 0.7rem;
             }
             .days-all{
                 width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                @media only screen and (max-width:1200px) {
-                    justify-content: space-between;
+                @each $property, $value in $between-center {
+                    #{$property} : $value;
                 }
                 .day-detail {
                     margin: 0 5px;
-                    display: flex;
-                    flex-direction: column;
+                    @each $property, $value in $vertical-center {
+                        #{$property} : $value;
+                    }
                     align-items: center;
-                    justify-content: center;
                     gap: 1rem;
                     @media only screen and (max-width:1200px) {
                         gap: 0;
@@ -99,16 +120,11 @@
                         }
                     }
                     p {
-                        width: 60px;
-                        height: 11px;
-                        flex-shrink: 0;
-                        color: #FFF;
-                        text-align: center;
-                        font-family: Inter;
+                        @each $property, $value in $paragraph {
+                            #{$property} : $value;
+                        }
                         font-size: 15px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
+                  
                     }
                     @media only screen and (max-width:1200px) {
                         width: 15px;

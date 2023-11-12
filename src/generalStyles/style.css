@@ -159,12 +159,18 @@ nav .navTypography:hover {
 .middle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .middle .photoSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 50%;
+}
+@media only screen and (max-width: 1200px) {
+  .middle .photoSection {
+    align-items: center;
+  }
 }
 .middle .photoSection h2 {
   padding-top: 1rem;
@@ -177,10 +183,10 @@ nav .navTypography:hover {
   line-height: normal;
 }
 .middle .photoSection .cityPhotos {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   gap: 1rem;
 }
 .middle .photoSection .cityPhotos img {
@@ -217,10 +223,10 @@ nav .navTypography:hover {
   color: #FFF;
   text-align: center;
   font-family: Inter;
-  font-size: 12.068px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 12.068px;
 }
 @media only screen and (max-width: 1200px) {
   .middle .day-weather .days-header p {
@@ -244,17 +250,12 @@ nav .navTypography:hover {
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (max-width: 1200px) {
-  .middle .day-weather .days-body .days-all {
-    justify-content: space-between;
-  }
-}
 .middle .day-weather .days-body .days-all .day-detail {
   margin: 0 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 @media only screen and (max-width: 1200px) {
@@ -277,10 +278,10 @@ nav .navTypography:hover {
   color: #FFF;
   text-align: center;
   font-family: Inter;
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 15px;
 }
 @media only screen and (max-width: 1200px) {
   .middle .day-weather .days-body .days-all .day-detail {
