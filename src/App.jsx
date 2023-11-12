@@ -1,3 +1,5 @@
+import AirCondition from './components/AirCondition'
+import Chart from './components/Chart'
 import CityPhoto from './components/CityPhoto'
 import DayWeather from './components/DayWeather'
 import Header from './components/Header'
@@ -14,7 +16,7 @@ function App() {
           <Header />
       </div>
       <div className='item'>
-        <p>chart</p>
+        <Chart />
       </div>
       </div>
       <div className='second-container'>
@@ -26,7 +28,7 @@ function App() {
         <DayWeather />
       </div>
       <div className='item'>
-        <p>detail</p>
+        <AirCondition />
       </div>
       </div>
     </main>

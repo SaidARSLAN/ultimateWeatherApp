@@ -291,6 +291,86 @@ nav .navTypography:hover {
   cursor: pointer;
 }
 
+.air-condition {
+  display: flex;
+  flex-direction: column;
+  height: 599px;
+  justify-content: space-between;
+}
+.air-condition .air-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.air-condition .air-header h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.air-condition .air-title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.air-condition .air-data {
+  position: relative;
+  height: 381px;
+}
+.air-condition .air-data .mountain-svg svg {
+  position: absolute;
+}
+.air-condition .air-data .air-info {
+  padding-left: 2.5rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.air-condition .air-data .air-info .air-layout {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.air-condition .air-data .air-info .air-layout h3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 560px;
+}
+@media only screen and (max-width: 1200px) {
+  .chart {
+    width: 460px;
+  }
+}
+.chart svg {
+  width: 590px;
+}
+
 main {
   display: flex;
   flex-direction: column;

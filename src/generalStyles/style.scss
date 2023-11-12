@@ -3,7 +3,8 @@
 @import 'header.scss';
 @import 'nav.scss';
 @import './middle';
-
+@import './airCondition.scss';
+@import './chart';
 $properties: (
   background-color: #FFFFFF,
   background: #C4C3C166,
