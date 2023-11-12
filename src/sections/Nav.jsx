@@ -1,5 +1,6 @@
 import React from 'react'
 import {logo,navLinks} from '../contains'
+import NavItem from '../components/NavItem'
 
 const Nav = () => {
   return (
@@ -9,10 +10,7 @@ const Nav = () => {
         </div>
         {navLinks.map((link) => {
             return (
-            <div className='navItem navTypography'>
-                    <img src={link.icon} />
-                    <p>{link.name}</p>
-            </div>
+            <NavItem link={link} />
         )
         })}
     </nav>
