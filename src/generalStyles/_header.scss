@@ -5,8 +5,8 @@ header {
     align-items: center;
     justify-content: space-between;
     color: #FFFFFF;
-    padding: 0rem 2rem 0 2rem;
-    @media only screen and (max-width:500px) {
+    padding: 0 2rem;
+    @media only screen and (max-width:1200px) {
         height: 200px;
     }
     .info-section {
@@ -43,11 +43,11 @@ header {
     }
     .image-section {
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 279px;
         height: 272px;
         padding: 34px 23.25px 22.667px 23.25px;
-        justify-content: center;
-        align-items: center;
         flex-shrink: 0;
         @media only screen and (max-width:1200px) {
             width: 150px;       
@@ -58,11 +58,11 @@ header {
     }
     .date-section {
         display: flex;
-        width: 369px;
+        width: 379px;
         height: 28px;
         flex-shrink: 0;
         align-items: center;
-        @media only screen and (max-width:500px) {
+        @media only screen and (max-width:1200px) {
             width: 220px;
         }
         h2 {

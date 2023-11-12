@@ -14,7 +14,7 @@ export const Provider = ({children}) => {
 
     
     const getImages = async () => {
-        const response = await fetch("https://api.unsplash.com/search/photos?query=countryside", {
+        const response = await fetch("https://api.unsplash.com/search/photos?query=ankara", {
             headers: {
                 Authorization: "Client-ID g8Xeq0CXcvobo22LXXeBMfq4G6bH1TX8k2aI4KjUa44"
             }

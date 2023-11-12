@@ -17,7 +17,7 @@ const Chart = () => {
       {forecastInfo.forecast && forecastInfo.forecast.forecastday[0].hour.slice(0,7).map((forecast) => {
         return (
           <div>
-              <p>{forecast.temp_c}</p>
+              <p>{forecast.temp_c}&deg;C</p>
             </div>
           )
         })}
