@@ -8,7 +8,7 @@ import cloud from '../assets/cloud.png'
 import explore from '../assets/explore.png'
 import location from '../assets/location.png'
 import settings from '../assets/settings.png'
-
+import heart from '../assets/Heart.png'
 
 export const navLinks = [
     {icon:cloud,name:"weather"},
@@ -18,4 +18,5 @@ export const navLinks = [
 ]
 
 
-export {backgroundImage,logo,explore,location,settings,cloud}
+
+export {backgroundImage,logo,explore,location,settings,cloud,heart}
