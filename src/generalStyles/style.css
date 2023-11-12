@@ -27,7 +27,9 @@ header {
 }
 @media only screen and (max-width: 1200px) {
   header {
-    height: 200px;
+    height: 150px;
+    padding: 0 0.6rem;
+    justify-content: flex-start;
   }
 }
 header .info-section {
@@ -39,7 +41,7 @@ header .info-section {
 @media only screen and (max-width: 1200px) {
   header .info-section {
     justify-content: center;
-    row-gap: 1rem;
+    row-gap: 0.4rem;
   }
 }
 header .info-section .description {
@@ -49,14 +51,19 @@ header .info-section .description {
   row-gap: 1rem;
 }
 @media only screen and (max-width: 1200px) {
+  header .info-section .description .hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
   header .info-section .description {
-    font-size: 14px;
+    font-size: 12px;
     row-gap: 4px;
   }
 }
 @media only screen and (max-width: 1200px) {
   header .info-section .celcius {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 header .info-section .centered {
@@ -78,7 +85,9 @@ header .image-section {
 }
 @media only screen and (max-width: 1200px) {
   header .image-section {
-    width: 150px;
+    width: 75px;
+    height: 150px;
+    padding: 0;
   }
 }
 header .image-section img {
@@ -86,19 +95,20 @@ header .image-section img {
 }
 header .date-section {
   display: flex;
-  width: 379px;
+  width: 400px;
   height: 28px;
   flex-shrink: 0;
   align-items: center;
 }
 @media only screen and (max-width: 1200px) {
   header .date-section {
-    width: 220px;
+    width: 150px;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 1200px) {
   header .date-section h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 header .date-section .line {

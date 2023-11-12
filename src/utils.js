@@ -12,11 +12,10 @@ const createDate = () => {
     const date = new Date()
     const currentDate = {}
 
-    const month = months[date.getDate() -1]
+    const month = months[date.getMonth()]
     const day = days[date.getDay()]
     const year = date.getFullYear()
     const dayOfTheMonth = date.getDate();
-
     currentDate.day = day
     currentDate.month = month.slice(0,3)
     currentDate.year = year

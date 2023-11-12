@@ -18,7 +18,7 @@ const Header = () => {
 
             
             <div className='description typography'>
-            <h3><ImLocation size={35}/> {info.location && info.location.name}</h3>
+            <h3><ImLocation size={35} className='hidden'/> {info.location && info.location.name}</h3>
             <h3 className='centered'>{info.current && info.current.condition.text}</h3>
             </div>
             
