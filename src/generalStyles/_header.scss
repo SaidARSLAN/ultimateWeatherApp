@@ -7,10 +7,11 @@ header {
     color: #FFFFFF;
     padding: 0 2rem;
 
-    @media only screen and (max-width:1200px) {
+    @media only screen and (max-width:500px) {
+        height: 120px;
+    }
+    @media  screen and (min-width:500px) and (max-width:1200px) {
         height: 150px;
-        padding: 0 0.6rem;
-        justify-content: flex-start;
     }
 
     .info-section {
@@ -19,9 +20,12 @@ header {
         flex-direction: column;
         justify-content: space-around;
 
-        @media only screen and (max-width:1200px) {
+        @media only screen and (max-width:500px) {
             justify-content: center;
             row-gap: 0.4rem;
+        }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            justify-content: center;
         }
 
         .description {
@@ -30,26 +34,38 @@ header {
             flex-direction: column;
             row-gap: 1rem;
             .hidden {
-                @media only screen and (max-width:1200px) {
+                @media only screen and (max-width:500px) {
                     display: none;
                 }
+                @media  screen and (min-width:500px) and (max-width:1200px) {
+                    display: none
+                }
             }
-            @media only screen and (max-width:1200px) {
+            @media only screen and (max-width:500px) {
                 font-size: 12px;
                 row-gap: 4px;
+            }
+            @media  screen and (min-width:500px) and (max-width:1200px) {
+                font-size: 15px;
             }
         }
 
         .celcius {
-            @media only screen and (max-width:1200px) {
+            @media only screen and (max-width:500px) {
                 font-size: 8px;
+            }
+            @media  screen and (min-width:500px) and (max-width:1200px) {
+                font-size: 10px;
             }
         }
 
         .centered {
             margin-left: 12px;
 
-            @media only screen and (max-width:1200px) {
+            @media only screen and (max-width:500px) {
+                margin-left: 0;
+            }
+            @media  screen and (min-width:500px) and (max-width:1200px) {
                 margin-left: 0;
             }
         }
@@ -64,8 +80,13 @@ header {
         padding: 34px 23.25px 22.667px 23.25px;
         flex-shrink: 0;
 
-        @media only screen and (max-width:1200px) {
+        @media only screen and (max-width:500px) {
             width: 75px;
+            height: 150px;
+            padding: 0;
+        }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            width: 150px;
             height: 150px;
             padding: 0;
         }
@@ -81,14 +102,20 @@ header {
         height: 28px;
         flex-shrink: 0;
         align-items: center;
-        @media only screen and (max-width:1200px) {
+        @media only screen and (max-width:500px) {
             width: 150px;
             flex-direction: column;
         }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            width: 250px;
+        }
 
         h2 {
-            @media only screen and (max-width:1200px) {
+            @media only screen and (max-width:500px) {
                 font-size: 15px;
+            }
+            @media  screen and (min-width:500px) and (max-width:1200px) {
+                font-size: 25px;
             }
         }
 

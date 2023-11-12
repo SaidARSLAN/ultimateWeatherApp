@@ -2,9 +2,9 @@ import React from 'react'
 
 const NavItem = ({ link }) => {
     return (
-        <div className='navItem navTypography'>
+        <div className='navItem'>
             <img src={link.icon} />
-            <p>{link.name}</p>
+            <p className='navTypography'>{link.name}</p>
         </div>
     )
 }

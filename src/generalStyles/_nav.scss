@@ -22,11 +22,18 @@ nav {
     padding: 3rem 0rem 5rem 0;
     gap: 2rem;
 
-    @media only screen and (max-width:1200px) {
+    @media only screen and (max-width:500px) {
         flex-direction: row;
-        height: 100%;
-        padding: 0 2rem 0 2rem;
+        height: 50px;
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+    }
+    @media  screen and (min-width:500px) and (max-width:1200px) {
+        flex-direction: row;
         justify-content: space-between;
+        padding: 2rem;
+        height: 25px;
     }
 
     .navItem {
@@ -36,10 +43,18 @@ nav {
 
         gap: 12px;
         cursor: pointer;
-
         @media only screen and (max-width:1200px) {
+            width: 60px;
             img {
-                width: 75%;
+                width: 55%;
+                gap: 0;
+            }
+        }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            width: 50px;
+            img {
+                width: 50%;
+                gap: 0;
             }
         }
     }
@@ -55,6 +70,7 @@ nav {
 
         @media only screen and (max-width:1200px) {
             color: white;
+            display: none;
         }
     }
 }

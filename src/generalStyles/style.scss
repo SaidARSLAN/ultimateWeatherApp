@@ -19,16 +19,22 @@ main {
         display: grid;
         grid-template-columns: 914px 593px;
         height: 50%;
-        @media only screen and (max-width:1200px) {
-            grid-template-columns: 1fr;
+        @media only screen and (max-width:500px) {
+            grid-template-columns: auto;
+        }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            grid-template-columns: auto;
         }
     }
     .second-container {
         display: grid;
         grid-template-columns: 188px 726px 593px;
         height: 100%;
-        @media only screen and (max-width:1200px) {
-            grid-template-columns: 1fr;
+        @media only screen and (max-width:500px) {
+            grid-template-columns: auto;
+        }
+        @media  screen and (min-width:500px) and (max-width:1200px) {
+            grid-template-columns: auto;
         }
     }
     .item {
