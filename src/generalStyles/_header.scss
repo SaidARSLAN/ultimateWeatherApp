@@ -6,14 +6,17 @@ header {
     justify-content: space-between;
     color: #FFFFFF;
     padding: 0 2rem;
+
     @media only screen and (max-width:1200px) {
         height: 200px;
     }
+
     .info-section {
         height: 272px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
         @media only screen and (max-width:1200px) {
             justify-content: center;
             row-gap: 1rem;
@@ -24,23 +27,28 @@ header {
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
+
             @media only screen and (max-width:1200px) {
                 font-size: 14px;
                 row-gap: 4px;
             }
         }
+
         .celcius {
             @media only screen and (max-width:1200px) {
-                font-size: 12px;       
+                font-size: 12px;
             }
         }
-        .centered{
+
+        .centered {
             margin-left: 12px;
+
             @media only screen and (max-width:1200px) {
                 margin-left: 0;
             }
         }
     }
+
     .image-section {
         display: flex;
         justify-content: center;
@@ -49,28 +57,33 @@ header {
         height: 272px;
         padding: 34px 23.25px 22.667px 23.25px;
         flex-shrink: 0;
+
         @media only screen and (max-width:1200px) {
-            width: 150px;       
+            width: 150px;
         }
+
         img {
             width: 100%;
         }
     }
+
     .date-section {
         display: flex;
         width: 379px;
         height: 28px;
         flex-shrink: 0;
         align-items: center;
+
         @media only screen and (max-width:1200px) {
             width: 220px;
         }
+
         h2 {
             @media only screen and (max-width:1200px) {
                 font-size: 20px;
             }
         }
-        
+
         .line {
             margin: 12px;
             width: 3px;

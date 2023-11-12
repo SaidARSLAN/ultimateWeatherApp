@@ -111,9 +111,9 @@ header .date-section .line {
 nav {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 3rem 0rem 5rem 0;
   gap: 2rem;
 }
@@ -127,9 +127,9 @@ nav {
 }
 nav .navItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 12px;
   cursor: pointer;
 }

@@ -8,4 +8,14 @@ import cloud from '../assets/cloud.png'
 import explore from '../assets/explore.png'
 import location from '../assets/location.png'
 import settings from '../assets/settings.png'
+
+
+export const navLinks = [
+    {icon:cloud,name:"weather"},
+    {icon:explore,name:"explore"},
+    {icon:location,name:"cities"},
+    {icon:settings,name:"settings"},
+]
+
+
 export {backgroundImage,logo,explore,location,settings,cloud}

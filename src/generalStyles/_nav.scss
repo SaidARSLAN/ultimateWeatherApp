@@ -1,42 +1,59 @@
+$vertical-center: (
+    display:flex,
+    flex-direction : column,
+    align-items: center,
+    justify-content: center,
+);
+$typography : (color: #C4C3C1,
+    text-align: center,
+    font-family: Inter,
+    font-size: 15px,
+    font-style: normal,
+    font-weight: 600,
+    line-height: normal,
+);
+
 nav {
-    display: flex;
-    flex-direction: column;
+    @each $property, $value in $vertical-center {
+        #{$property}: $value;
+    }
+
     width: 100%;
-    align-items: center;
-    justify-content: center;
     padding: 3rem 0rem 5rem 0;
     gap: 2rem;
-    @media only screen and (max-width:1200px)  {
+
+    @media only screen and (max-width:1200px) {
         flex-direction: row;
         height: 100%;
         padding: 0 2rem 0 2rem;
         justify-content: space-between;
     }
+
     .navItem {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @each $property, $value in $vertical-center {
+            #{$property}: $value;
+        }
+
         gap: 12px;
         cursor: pointer;
-        @media only screen and (max-width:1200px)  {
+
+        @media only screen and (max-width:1200px) {
             img {
                 width: 75%;
             }
         }
     }
+
     .navTypography {
-        color: #C4C3C1;
-        text-align: center;
-        font-family: Inter;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+        @each $property, $value in $typography {
+            #{$property}: $value;
+        }
+
         &:hover {
             color: #FFFFFF;
         }
-        @media only screen and (max-width:1200px)  {
+
+        @media only screen and (max-width:1200px) {
             color: white;
         }
     }

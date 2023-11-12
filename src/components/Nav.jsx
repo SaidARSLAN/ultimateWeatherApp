@@ -1,5 +1,5 @@
 import React from 'react'
-import {logo,explore,location,settings,cloud} from '../contains'
+import {logo,navLinks} from '../contains'
 
 const Nav = () => {
   return (
@@ -7,22 +7,14 @@ const Nav = () => {
         <div className='navItem'>
             <img src={logo} />
         </div>
-        <div className='navItem navTypography'>
-            <img src={cloud} />
-            <p>weather</p>
-        </div>
-        <div className='navItem navTypography'>
-            <img src={explore} />
-            <p>explore</p>
-        </div>
-        <div className='navItem navTypography'>
-            <img src={location} />
-            <p>cities</p>
-        </div>
-        <div className='navItem navTypography'>
-            <img src={settings} />
-            <p>settings</p>
-        </div>
+        {navLinks.map((link) => {
+            return (
+            <div className='navItem navTypography'>
+                    <img src={link.icon} />
+                    <p>{link.name}</p>
+            </div>
+        )
+        })}
     </nav>
   )
 }
