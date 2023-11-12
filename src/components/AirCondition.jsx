@@ -4,7 +4,6 @@ import GlobalContext from '../context/MainContext';
 const AirCondition = () => {
     const {info} = useContext(GlobalContext);
     var ampm = info.location && info.location.localtime >=12 ? 'PM': 'AM';
-    console.log(info)
     return (
     <section className='air-condition'>
         <div>
