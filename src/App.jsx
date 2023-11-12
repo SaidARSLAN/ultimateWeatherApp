@@ -1,5 +1,5 @@
 import AirCondition from './sections/AirCondition'
-import Chart from './sections/Chart'
+import Chart from './sections/HourlyWeather'
 import CityPhoto from './sections/CityPhoto'
 import DayWeather from './sections/DayWeather'
 import Header from './sections/Header'
