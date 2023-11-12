@@ -1,9 +1,9 @@
-import AirCondition from './components/AirCondition'
-import Chart from './components/Chart'
-import CityPhoto from './components/CityPhoto'
-import DayWeather from './components/DayWeather'
-import Header from './components/Header'
-import Nav from './components/Nav'
+import AirCondition from './sections/AirCondition'
+import Chart from './sections/Chart'
+import CityPhoto from './sections/CityPhoto'
+import DayWeather from './sections/DayWeather'
+import Header from './sections/Header'
+import Nav from './sections/Nav'
 import './generalStyles/style.css'
 
 
