@@ -8,11 +8,7 @@ const Nav = () => {
         <div className='navItem'>
             <img src={logo} />
         </div>
-        {navLinks.map((link) => {
-            return (
-            <NavItem link={link} />
-        )
-        })}
+        {navLinks.map( link =>  <NavItem link={link} /> )}
     </nav>
   )
 }

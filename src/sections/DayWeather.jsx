@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { days } from '../utils'
 import GlobalContext from '../context/MainContext'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
+import DayDetail from '../components/DayDetail'
 const DayWeather = () => {
 
     const { forecastInfo } = useContext(GlobalContext);
@@ -10,9 +11,7 @@ const DayWeather = () => {
     return (
         <section className='day-weather item'>
             <div className='days-header'>
-                {days.map((day) => {
-                    return <p key={day}>{day}</p>
-                })}
+                {days.map( day => <p key={day}>{day}</p>)}
             </div>
             <div className='days-body'>
                 <IoIosArrowBack
@@ -21,14 +20,8 @@ const DayWeather = () => {
                     onClick={() => { step > 0 && setStep(currStep => currStep - 7) }}
                 />
                 <div className='days-all'>
-                    {forecastInfo.forecast && forecastInfo.forecast.forecastday.slice(step, step + 7).map((day) => {
-                        return (
-                            <div key={day} className='day-detail'>
-                                <img src={day.day.condition.icon} />
-                                <p>{day.day.maxtemp_c}&deg;</p>
-                            </div>
-                        )
-                    })}
+                    {forecastInfo.forecast && forecastInfo.forecast.forecastday.slice(step, step + 7).map(
+                        day => <DayDetail day={day}/>)}
                 </div>
                 <IoIosArrowForward
                     size={30}
