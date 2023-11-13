@@ -247,7 +247,7 @@ nav .navTypography:hover {
 }
 @media only screen and (max-width: 500px) {
   .middle .photoSection {
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .middle .photoSection h2 {
@@ -378,6 +378,11 @@ nav .navTypography:hover {
   height: 599px;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .air-condition {
+    width: 85%;
+  }
+}
 .air-condition .air-header {
   width: 100%;
   display: flex;
@@ -406,6 +411,12 @@ nav .navTypography:hover {
   padding-top: 2rem;
   padding-left: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .air-condition .air-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 .air-condition .air-data {
   position: relative;
   height: 381px;
@@ -427,6 +438,13 @@ nav .navTypography:hover {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .air-condition .air-data .air-info .air-layout {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .air-condition .air-data .air-info .air-layout h3 {
   color: #FFF;
   font-family: Inter;
@@ -434,6 +452,11 @@ nav .navTypography:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (max-width: 500px) {
+  .air-condition .air-data .air-info .air-layout h3 {
+    font-size: 12px;
+  }
 }
 
 .chart {
@@ -571,9 +594,14 @@ main .second-container {
   grid-template-columns: 188px 726px 593px;
   height: 100%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 321px) {
   main .second-container {
-    grid-template-columns: auto;
+    grid-template-columns: 320px;
+  }
+}
+@media screen and (min-width: 322px) and (max-width: 499px) {
+  main .second-container {
+    grid-template-columns: 425px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1200px) {

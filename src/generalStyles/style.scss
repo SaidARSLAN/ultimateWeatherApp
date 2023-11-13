@@ -22,6 +22,7 @@ main {
         @media only screen and (max-width:500px) {
             grid-template-columns: auto;
         }
+        
         @media  screen and (min-width:500px) and (max-width:1200px) {
             grid-template-columns: auto;
         }
@@ -30,8 +31,11 @@ main {
         display: grid;
         grid-template-columns: 188px 726px 593px;
         height: 100%;
-        @media only screen and (max-width:500px) {
-            grid-template-columns: auto;
+        @media only screen and (max-width:321px) {
+            grid-template-columns: 320px;
+        }
+        @media  screen and (min-width:322px) and (max-width:499px) {
+            grid-template-columns: 425px;
         }
         @media  screen and (min-width:500px) and (max-width:1200px) {
             grid-template-columns: auto;
