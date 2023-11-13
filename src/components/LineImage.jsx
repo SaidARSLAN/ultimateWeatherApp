@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef } from 'react';
+import { drawLineChart } from '../utils';
+import GlobalContext from '../context/MainContext';
 
 const LineImage = () => {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" className='line-svg' viewBox="0 0 693 50" fill="none">
-        <path d="M-1 1C-1 1 74.8806 4.83144 122.56 13.4122C159.256 20.0162 178.348 33.213 215.23 35.9093C252.112 38.6056 272.535 27.619 309.526 27.3759C355.578 27.0733 380.795 37.6231 426.829 38.8709C480.272 40.3194 511.405 44.2691 563.507 31.3678C635.79 13.4693 641.831 31.3548 699 49" stroke="#F0F0F0" stroke-width="1.39432"/>
-        </svg>
-  )
-}
+  const { forecastInfo } = useContext(GlobalContext);
+  const temperatures =
+    forecastInfo &&
+    forecastInfo.forecast &&
+    forecastInfo.forecast.forecastday[0] &&
+    forecastInfo.forecast.forecastday[0].hour.slice(0, 7).map((forecast) => forecast.temp_c);
+  const canvas = useRef(null);
 
-export default LineImage
+  useEffect(() => {
+    if (canvas.current && temperatures) {
+      const ctx = canvas.current.getContext('2d');
+      drawLineChart(canvas.current, ctx, temperatures);
+    }
+  }, [temperatures]);
+
+  return <canvas ref={canvas} width="400" height="75" />;
+};
+
+export default LineImage;
