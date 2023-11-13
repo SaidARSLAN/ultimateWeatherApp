@@ -18,7 +18,7 @@ const LineImage = () => {
     }
   }, [temperatures]);
 
-  return <canvas ref={canvas} width="400" height="75" />;
+  return <canvas ref={canvas} width="400" height="40" />;
 };
 
 export default LineImage;

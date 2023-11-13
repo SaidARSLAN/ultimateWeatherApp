@@ -25,10 +25,10 @@ export const createDate = () => {
 }
 
 export function drawLineChart(canvas,ctx,temperatures) {
-    const xPadding = 50;
-    const yPadding = 20;
-    const height = canvas.height - yPadding * 2;
-    const width = canvas.width - xPadding * 2;
+    const xPadding = 10;
+    const yPadding = 10;
+    const height = canvas.height - yPadding;
+    const width = canvas.width - xPadding;
 
     const maxTemperature = Math.max(...temperatures);
     const temperatureScale = height / maxTemperature;
