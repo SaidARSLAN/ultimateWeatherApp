@@ -23,10 +23,6 @@ WeatherAPI anahtarınızı [WeatherAPI](https://www.weatherapi.com/) sayfasında
 
 ## Fonksiyonlar
 
-### `getImages`
-
-Belirli bir konum için Unsplash API'sinden resimleri getirir.
-
 ```javascript
 const images = await getImages();
 console.log(images);
