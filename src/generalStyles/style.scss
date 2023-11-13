@@ -34,8 +34,11 @@ main {
         @media only screen and (max-width:321px) {
             grid-template-columns: 320px;
         }
-        @media  screen and (min-width:322px) and (max-width:499px) {
-            grid-template-columns: 425px;
+        @media  screen and (min-width:321px) and (max-width:420px) {
+            grid-template-columns: 380px;
+        }
+        @media  screen and (min-width:421px) and (max-width:499px) {
+            grid-template-columns: 420px;
         }
         @media  screen and (min-width:500px) and (max-width:1200px) {
             grid-template-columns: auto;
